@@ -54,7 +54,7 @@ print(next(d))
 print(next(d))
 '''
 #fromkeys()
-a="codegnan"
+'''a="codegnan"
 print(a)
 
 print(list(a))
@@ -67,7 +67,7 @@ b=dict.fromkeys(a)
 print(b)
 
 b=dict.fromkeys(a,"simha")
-print(b)
+print(b)'''
 
 #eval():-
 ''' It will accept any data type'''
@@ -83,10 +83,13 @@ print(b)
     print(a+b)'''
 
 '''while True:
-    a=(input("a value"))
-    b=(input("b value"))
+    a=input("a value"))
+    b=input("b value"))
     print(a+b)'''
-    
+
+'''a=eval(input("a value"))
+b=eval(input("b value"))
+print(a+b)'''
 
 '''while True:
     a=int(input("a value"))
@@ -100,7 +103,7 @@ print(b)
 names=["simhadri","aditya","hitesh","mohith","mahesh"]
 print(a+names)
 b=zip(a,names)
-print(b)
+print(*b)
 
 c=list(zip(a,names))
 print(c)
@@ -142,15 +145,120 @@ print(b)'''
 '''chr(20) #\x14
 chr(68) #D
 chr(90) #Z'''
-'''
+
 #ord()
-ord("a")
+'''ord("a")
 ord("9")'''
 
+
+#-------TASK-----------
 #1.print A-Z
 #2.print a-z
 #3.ASCII for yor name!!
+'''
 
+for i in range(65, 91):
+    print(chr(i), end=" ")
+    
+
+
+for i in range(97,123):
+    print(chr(i), end=" ")
+
+
+name=input("enter your name:")
+for i in name:
+    print(ord(i))
+'''
+
+
+#annonymous:-
+''' Annonymous functions are nameless functions we use a keyword called as lambda to create annonymous functions'''
+#write a function to calculate 2*x+5 Where x=5
+
+'''def f(x):
+    print(2*x+5)
+f(5)'''
+#Runtime
+'''def f():
+    x=int(input("value"))
+    print(2*x+5)          
+f()'''
+#syntax:-
+#a=lambda arg:expr
+
+'''a=lambda x:2*x+5
+print(a(5))'''
+
+#Runtime
+'''a=int(input("value"))
+b=lambda x:2*x+5
+print(b(a))'''
+
+#TASK
+#multiple by 2 numbers
+'''a=int(input("value a"))
+b=int(input("value b"))
+c=lambda a,b:a*b
+print(c(a,b))'''
+
+'''a=99
+b=69
+c=lambda a,b:a*b
+print(c(a,b))'''
+
+#TASK-2
+'''a="python"
+b=lambda a:a.upper()
+print(b(a))'''
+
+'''a=input("enter")
+b=lambda a:a.upper()
+print(b(a))'''
+
+'''
+b=lambda a:a.upper()
+print(b("python"))
+'''
+#Fname and Lname
+'''a=input("fname:")
+b=input("lname:")
+c=lambda a,b:a+" "+b
+print(c(a,b))'''
+
+'''a,b=[i for i in input("enter the name").split("0")]
+c=lambda x,y:(x+" "+y).title()
+print(c(a,b))'''
+#filter()
+'''a=[2,5,7,8,9,11,20,30,40]
+if a%2==0:
+    print(a)''' #error
+
+'''for i in a:
+    if i%2==0:
+        print(i)'''
+
+'''for i in a:
+    if i%2==0:
+        print(i, end=" ")'''
+
+'''b=list(filter(lambda x:x%2==0,a))
+print(b)'''
+
+'''b=list(filter(lambda x:x%2!=0,a))
+print(b)'''
+
+'''a=[[],(),set(),{}," ",None,2,3.4,"simha",5+2j,True,False]
+b=list(filter(None,a))
+print(b)'''
+#map():-
+'''Each object from a collection and forms a new collection'''
+a=[10,5,7,8,15,20,40,100]
+b=[4,6,12,24,40,80,35,1,98]
+c=list(map(max,a,b))
+print(c)
+c=list(map(min,a,b))
+print(c)
 
 
 
