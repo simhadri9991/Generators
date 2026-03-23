@@ -230,8 +230,8 @@ print(c(a,b))'''
 c=lambda x,y:(x+" "+y).title()
 print(c(a,b))'''
 #filter()
-'''a=[2,5,7,8,9,11,20,30,40]
-if a%2==0:
+a=[2,5,7,8,9,11,20,30,40]
+'''if a%2==0:
     print(a)''' #error
 
 '''for i in a:
@@ -252,46 +252,56 @@ print(b)'''
 b=list(filter(None,a))
 print(b)'''
 #map():-
+
 '''Each object from a collection and forms a new collection'''
+'''
 a=[10,5,7,8,15,20,40,100]
 b=[4,6,12,24,40,80,35,1,98]
 c=list(map(max,a,b))
 print(c)
 c=list(map(min,a,b))
 print(c)
+'''
 
+'''a=input("data1")
+b=input("data2")
+print(a+b)'''
 
+'''a,b=input("enter the names:").split(",")
+print(a+b)'''
 
+'''a,b=[x for x in input("enter the names:").split(",")
+print(a+b)'''
 
+'''a=int(input("a value"))
+b=int(input("b value"))
+print(a+b)'''
 
+'''a,b=int(input("enter the values:")).split(",")
+print(a+b)'''
 
+'''a=int(input("a value"))
+b=int(input("b value"))
+print(a+b)'''
 
+'''a,b=int(input("enter the values:")).split(",")
+print(a+b)''' #value error
 
+'''a,b=[int(x) for x in input("enter the names:").split(",")]
+print(a+b)'''
 
+'''a,b=map(int,input("enter the values:").split(","))
+print(a+b)'''
 
+'''a=list(map(int,input("enter the values:").split(",")))
+print(a)'''
 
+'''a=tuple(map(int,input("enter the values:").split(",")))
+print(a)'''
 
+'''a=set(map(int,input("enter the values:").split(",")))
+print(a)'''
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+'''a=input("enter the key and value pairs:")
+b=dict(i.split(":") for i in a.split(","))
+print(b)'''
